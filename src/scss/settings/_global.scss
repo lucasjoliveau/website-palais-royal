@@ -4,3 +4,11 @@ $global-transition: all 300ms ease-in-out;
   font-size: 0.75rem;
   color: $color-4;
 }
+
+.subtitle {
+  text-transform: uppercase;
+  font-size: rem(16);
+  line-height: 28px;
+  letter-spacing: 0.095em;
+  font-weight: $fw-bold;
+}

@@ -1,6 +1,15 @@
-// Components
-@import "components/header";
-@import "components/footer";
+// Tools
+@import "tools/functions";
+@import "tools/mixins";
+
+// Settings
+@import "settings/colors";
+@import "settings/fonts";
+@import "settings/dimensions";
+@import "settings/global";
+
+// Generic
+@import "generic/reset";
 
 // Elements
 @import "elements/body";
@@ -10,18 +19,10 @@
 @import "elements/wrapper";
 @import "elements/forms";
 
-// Generic
-@import "generic/reset";
-
-// Settings
-@import "settings/colors";
-@import "settings/fonts";
-@import "settings/dimensions";
-@import "settings/global";
-
-// Tools
-@import "tools/functions";
-@import "tools/mixins";
+// Components
+@import "components/header";
+@import "components/footer";
+@import "components/hero";
 
 // Utilities
 @import "utilities/spacing";
