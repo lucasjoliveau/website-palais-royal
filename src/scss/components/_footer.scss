@@ -64,6 +64,18 @@ footer {
     align-items: center;
     padding: 0;
     height: 200px;
+
+    li:not(.language-selector) {
+      a {
+        color: $color-3 !important;
+      }
+    }
+
+    .language-selector {
+      img {
+        margin-right: 13px;
+      }
+    }
   }
 
 
