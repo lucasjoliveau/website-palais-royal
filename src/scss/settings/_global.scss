@@ -26,9 +26,16 @@ $global-transition: all 300ms ease-in-out;
   margin-top: 44px;
 }
 
+// Button color 1
 .btn-col1 {
   border-color: $color-accent;
   color: $color-accent !important;
+}
+
+// BUtton color 2
+.btn-col2 {
+  border-color: $color-6;
+  color: $color-6 !important;
 }
 
 // White background with gray border
