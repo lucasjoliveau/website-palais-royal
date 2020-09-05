@@ -1,0 +1,12 @@
+.about-chef {
+  margin: 100px 0;
+  .about-chef-col1 {
+    padding: 50px 0;
+
+    p:nth-child(1)::first-letter {
+      color: $color-accent;
+      font-family: $ff-title;
+      font-size: rem(60);
+    }
+  }
+}
