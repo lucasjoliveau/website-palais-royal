@@ -23,6 +23,32 @@ footer {
 
     ul {
       list-style: none;
+      padding: 0;
+    }
+  }
+
+  .col-1 {
+    margin-top: 44px;
+    ul {
+      display: flex;
+
+      li:nth-child(1) {
+        margin-right: 29px;
+      }
+    }
+  }
+
+  .col-2 {
+    margin-top: 75px;
+    ul {
+      li {
+        display: flex;
+        align-items: end;
+
+        img {
+          margin-right: 17px;
+        }
+      }
     }
   }
 
