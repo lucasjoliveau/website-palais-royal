@@ -1,6 +1,6 @@
 .hero-chef {
-
-  margin: 150px 0;
+  display: flex;
+  flex-direction: column-reverse;
 
   .quote-icon {
     position: absolute;
@@ -11,6 +11,10 @@
   .subtitle-group {
     display: flex;
     align-items: center;
+  }
 
+  .hero-chef-col1 {
+    margin-top: 150px;
+    height: calc(100vh - 150px);
   }
 }
