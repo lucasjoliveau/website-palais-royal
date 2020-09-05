@@ -36,6 +36,11 @@ $global-transition: all 300ms ease-in-out;
 .btn-col2 {
   border-color: $color-6;
   color: $color-6 !important;
+
+  &:hover {
+    background: $color-6;
+    color: $color-1 !important;
+  }
 }
 
 // White background with gray border
@@ -44,4 +49,10 @@ $global-transition: all 300ms ease-in-out;
   outline: 2px solid $color-7;
   outline-offset: 20px;
   margin: 20px;
+}
+
+// Black background
+.bg-black {
+  background: $color-1;
+  padding: 70px 0;
 }
