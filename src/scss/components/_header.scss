@@ -1,0 +1,234 @@
+a {
+  display: block;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 98rem;
+  margin: 0 auto;
+  padding: 0 2.2rem;
+}
+
+header {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  z-index: 1400;
+  width: 100%;
+  background: $color-1;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-list-mobile {
+  display: none;
+}
+
+.nav-link {
+  font-size: $fz-h1;
+  font-family: $ff-title;
+  font-weight: $fw-regular;
+  color: $color-6 !important;
+  //color: #fff !important;
+  padding: 0 1rem;
+  transition: opacity 0.5s;
+
+  &:hover {
+    opacity: .7;
+  }
+}
+
+ul.nav-list.nav-list-larger > li {
+  margin-bottom: 50px;
+}
+
+.nav-link-rest {
+  /* Dimensions of the logotype */
+  width: 134px;
+  height: 4rem;
+  background: url("../images/logo-color.svg") center no-repeat;
+  background-size: contain;
+}
+
+.background-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: $color-accent;
+  transition: height 1.7s cubic-bezier(0.5, 0, 0.31, 1);
+}
+
+.background-bg.active-bg {
+  height: 100vh;
+  opacity: 1;
+  transition: height 1s cubic-bezier(0.5, 0, 0.31, 1);
+}
+
+body > header > div > nav > ul.nav-list.nav-list-mobile {
+  flex-direction: row;
+}
+
+.nav-logo {
+  width: 175px !important;
+}
+
+@media screen and (max-width: 767px) {
+  header {
+    height: 4rem;
+    /*transition: background .36s cubic-bezier(0.32, 0.08, 0.24, 1),*/
+    /*            height .56s cubic-bezier(0.32, 0.08, 0.24, 1);*/
+    transition: background 1.3s cubic-bezier(0.5, 0, 0.31, 1),
+    height 1.3s cubic-bezier(0.5, 0, 0.31, 1);
+  }
+
+  header .container{
+    padding: 0;
+  }
+
+  .nav-list {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-list-mobile {
+    display: flex;
+    //padding: 0 20px;
+    padding: 0;
+  }
+
+  .nav-item {
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-item-hidden {
+    display: none;
+  }
+
+  .mobile-menu {
+    margin-right: -37px;
+    position: relative;
+    z-index: 1500;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .line {
+    position: absolute;
+    width: 1.7rem;
+    height: 1px;
+    background-color: $color-6;
+    transition: margin-top .3192s cubic-bezier(0.04, 0.04, 0.12, 0.96);
+  }
+
+  .line-top {
+    margin-top: 3px;
+  }
+
+  .line-bottom {
+    margin-top: -3px;
+  }
+
+  .active .line-top {
+    margin-top: 0;
+    transform: rotate(45deg);
+    transition: transform .3192s .1s cubic-bezier(0.5, 0, 0.31, 1);
+  }
+
+  .active .line-bottom {
+    margin-top: 0;
+    transform: rotate(-45deg);
+    transition: transform .3192s .1s cubic-bezier(0.5, 0, 0.31, 1);
+  }
+
+  header.active {
+    /*When dropdown menu is active*/
+    height: 100%;
+    width: 100%;
+    background-color: $color-1;
+    border: none;
+  }
+
+  .nav-link-rest {
+    width: 175px;
+    transition: opacity 3s;
+    position: relative;
+    z-index: 1500;
+  }
+
+  .nav {
+    position: relative;
+  }
+
+  .nav-link {
+    font-size: 2.7rem;
+    padding: 0;
+    margin: auto 0;
+  }
+
+  .nav-list-larger {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    display: block;
+    padding: 15vh 25px;
+    z-index: 100;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity .7s;
+    transition-delay: 0;
+    margin: 40% auto;
+  }
+
+  .active .nav-list-larger {
+    width: 100%;
+    height: 100vh;
+    opacity: 1;
+    transition-delay: 1s;
+  }
+
+  .nav-list-larger .nav-item {
+    margin: 10px 0;
+    width: 400px;
+    justify-content: flex-start;
+  }
+
+  .nav-list-larger .nav-item:nth-child(9) {
+    border-bottom: none;
+  }
+
+  .active .nav-list-larger .nav-item {
+    animation: fadeIn 1s ease-in;
+  }
+
+  .nav-item:nth-child(2) {
+    animation-delay: 1s;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
