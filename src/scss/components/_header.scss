@@ -30,8 +30,10 @@ header {
 }
 
 .nav-link {
-  font-size: 1.1rem;
-  font-weight: 800;
+  font-size: $fz-h1;
+  font-family: $ff-title;
+  font-weight: $fw-regular;
+  color: $color-6 !important;
   //color: #fff !important;
   padding: 0 1rem;
   transition: opacity 0.5s;
