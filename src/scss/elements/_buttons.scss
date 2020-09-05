@@ -1,4 +1,4 @@
-// Buttons
+// Primary button
 .btn-primary {
   text-transform: uppercase;
   font-size: rem(16);
@@ -8,6 +8,18 @@
   border: 3px solid;
   display: inline-block;
   padding: 22px 50px;
+  margin-top: 44px;
+}
+
+// Secondary button
+.btn-secondary {
+  text-transform: uppercase;
+  font-size: rem(16);
+  line-height: 28px;
+  letter-spacing: 0.095em;
+  font-weight: $fw-bold;
+  display: inline-block;
+  padding: 22px 50px !important;
   margin-top: 44px;
 }
 
@@ -42,4 +54,11 @@
     background: $color-2;
     color: $color-6 !important;
   }
+}
+
+// Buton color 4
+.btn-col4 {
+  background: $color-accent;
+  color: $color-6 !important;
+  font-size: rem(16) !important;
 }
