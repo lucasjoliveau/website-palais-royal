@@ -55,4 +55,12 @@ $global-transition: all 300ms ease-in-out;
 .bg-black {
   background: $color-1;
   padding: 70px 0;
+
+  h2 {
+    color: $color-6;
+  }
+
+  p {
+    color: $color-5;
+  }
 }
