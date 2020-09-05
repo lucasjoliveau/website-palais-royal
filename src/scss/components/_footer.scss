@@ -18,5 +18,13 @@ footer {
     width: initial;
   }
 
+  .col-1, .col-2 {
+    color: $color-6;
+
+    ul {
+      list-style: none;
+    }
+  }
+
 
 }
