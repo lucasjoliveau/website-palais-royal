@@ -1,9 +1,26 @@
 .hero {
   background: url("../images/hero-accueil.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   padding: 100px 0;
 
   .hero-text {
-    background: #fff;
+    background: $color-6;
     text-align: center;
+    padding: 100px 0;
+
+    .subtitle {
+      color: $color-3;
+    }
+
+    h1 {
+      color: $color-2;
+    }
+
+    p {
+      color: $color-4;
+      margin-bottom: 44px;
+    }
   }
 }

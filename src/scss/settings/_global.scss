@@ -12,3 +12,19 @@ $global-transition: all 300ms ease-in-out;
   letter-spacing: 0.095em;
   font-weight: $fw-bold;
 }
+
+.btn-primary {
+  text-transform: uppercase;
+  font-size: rem(16);
+  line-height: 28px;
+  letter-spacing: 0.095em;
+  font-weight: $fw-bold;
+  border: 3px solid;
+  display: inline-block;
+  padding: 22px 50px;
+}
+
+.btn-col1 {
+  border-color: $color-accent;
+  color: $color-accent !important;
+}
