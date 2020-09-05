@@ -1,0 +1,10 @@
+img {
+  width: 100%;
+}
+
+.img-group {
+  margin-top: 75px;
+  img:nth-child(1) {
+    margin-bottom: 24px;
+  }
+}
