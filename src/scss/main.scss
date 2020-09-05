@@ -24,11 +24,15 @@
 // Components
 @import "components/header";
 @import "components/footer";
+
+// Page d'accueil
 @import "components/hero";
 @import "components/book-experience";
 @import "components/features";
 @import "components/opening-hours";
 @import "components/maps";
+// Le Chef
+@import "components/hero-chef";
 
 // Utilities
 @import "utilities/spacing";
