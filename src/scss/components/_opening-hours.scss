@@ -1,0 +1,18 @@
+.opening-hours {
+  text-align: center;
+
+  .opening-hours-col1 {
+    margin-top: 60px;
+  }
+
+  .opening-hours-col2 {
+    margin-bottom: 60px;
+    p:nth-child(1) {
+      margin-bottom: 0;
+    }
+
+    p:nth-child(2) {
+      margin-top: 0;
+    }
+  }
+}
