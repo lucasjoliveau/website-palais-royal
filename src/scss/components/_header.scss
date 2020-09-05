@@ -39,6 +39,10 @@ header {
   transition: opacity 0.5s;
 }
 
+ul.nav-list.nav-list-larger > li {
+  margin-bottom: 50px;
+}
+
 .nav-link-rest {
   /* Dimensions of the logotype */
   width: 134px;
@@ -181,12 +185,13 @@ body > header > div > nav > ul.nav-list.nav-list-mobile {
     width: 0;
     height: 0;
     display: block;
-    padding: 30vh 25px;
+    padding: 15vh 25px;
     z-index: 100;
     box-sizing: border-box;
     opacity: 0;
     transition: opacity .7s;
     transition-delay: 0;
+    margin: 40% auto;
   }
 
   .active .nav-list-larger {
