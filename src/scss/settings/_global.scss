@@ -18,7 +18,7 @@ $global-transition: all 300ms ease-in-out;
   background: $color-6;
   outline: 2px solid $color-7;
   outline-offset: 20px;
-  margin: 20px;
+  margin: 20px 0;
 }
 
 // Black background
@@ -46,8 +46,13 @@ $global-transition: all 300ms ease-in-out;
 }
 
 // Gold line before subtitle in hero
-.subtitle-line {
-  margin-right: 15px;
-  border-bottom: 3px solid $color-accent;
-  width: 45px;
+.subtitle-group {
+  display: flex;
+  align-items: center;
+
+  .subtitle-line {
+    margin-right: 15px;
+    border-bottom: 3px solid $color-accent;
+    width: 45px;
+  }
 }
