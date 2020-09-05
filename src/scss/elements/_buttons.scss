@@ -1,0 +1,45 @@
+// Buttons
+.btn-primary {
+  text-transform: uppercase;
+  font-size: rem(16);
+  line-height: 28px;
+  letter-spacing: 0.095em;
+  font-weight: $fw-bold;
+  border: 3px solid;
+  display: inline-block;
+  padding: 22px 50px;
+  margin-top: 44px;
+}
+
+// Button color 1
+.btn-col1 {
+  border-color: $color-accent;
+  color: $color-accent !important;
+
+  &:hover {
+    background: $color-accent;
+    color: $color-6 !important;
+  }
+}
+
+// Button color 2
+.btn-col2 {
+  border-color: $color-6;
+  color: $color-6 !important;
+
+  &:hover {
+    background: $color-6;
+    color: $color-1 !important;
+  }
+}
+
+// Button color 3
+.btn-col3 {
+  border-color: $color-2;
+  color: $color-2 !important;
+
+  &:hover {
+    background: $color-2;
+    color: $color-6 !important;
+  }
+}
