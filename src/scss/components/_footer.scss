@@ -1,0 +1,22 @@
+footer {
+  background: $color-1;
+  padding: 80px 0;
+
+  .logo-member {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    img {
+      width: 209px;
+      margin-bottom: 23px;
+    }
+  }
+
+  .icon {
+    width: initial;
+  }
+
+
+}
