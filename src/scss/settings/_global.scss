@@ -5,6 +5,10 @@ $global-transition: all 300ms ease-in-out;
   color: $color-4;
 }
 
+img {
+  width: 100%;
+}
+
 .subtitle {
   text-transform: uppercase;
   font-size: rem(16);
