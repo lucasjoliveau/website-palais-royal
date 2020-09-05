@@ -37,6 +37,10 @@ header {
   //color: #fff !important;
   padding: 0 1rem;
   transition: opacity 0.5s;
+
+  &:hover {
+    opacity: .7;
+  }
 }
 
 ul.nav-list.nav-list-larger > li {
