@@ -1,0 +1,20 @@
+.hero-chef {
+  display: flex;
+  flex-direction: column-reverse;
+
+  .quote-icon {
+    position: absolute;
+    top: 160px;
+    width: auto !important;
+  }
+
+  .subtitle-group {
+    display: flex;
+    align-items: center;
+  }
+
+  .hero-chef-col1 {
+    margin-top: 150px;
+    height: calc(100vh - 150px);
+  }
+}
