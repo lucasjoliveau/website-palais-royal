@@ -1,0 +1,71 @@
+.images-gallery {
+  padding: 20px 0;
+  margin: 100px 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 14px;
+}
+
+.grid-1 {
+  background: url("../images/gallery-1.png") no-repeat;
+  background-size: cover;
+  width: auto;
+  height: 204px;
+}
+
+.grid-2 {
+  background: url("../images/gallery-3.png") no-repeat;
+  background-size: cover;
+  width: auto;
+  height: 203px;
+}
+
+.grid-3 {
+  background: url("../images/gallery-5.png") no-repeat;
+  background-size: cover;
+  width: auto;
+  height: 161px;
+}
+
+.grid-4 {
+  background: url("../images/gallery-6.png") no-repeat;
+  background-size: cover;
+  width: auto;
+  height: 161px;
+}
+
+.grid-5 {
+   background: url("../images/gallery-2.png") no-repeat;
+   background-size: cover;
+   width: auto;
+   height: 204px;
+ }
+
+.grid-6 {
+  background: url("../images/gallery-4.png") no-repeat;
+  background-size: cover;
+  width: auto;
+  height: 204px;
+}
+
+
+// Entre téléphone et tablette
+@media screen and (min-width: $vw-thin-small) {
+  .grid-1, .grid-2, .grid-5, .grid-6 {
+    height: 300px;
+  }
+
+  .grid-3, .grid-4 {
+    height: 200px;
+  }
+}
+
+// Format tablette
+@media screen and (min-width: $vw-small) {
+  .grid-3, .grid-4 {
+    height: 300px;
+  }
+}
