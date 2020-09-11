@@ -62,3 +62,10 @@
     height: 200px;
   }
 }
+
+// Format tablette
+@media screen and (min-width: $vw-small) {
+  .grid-3, .grid-4 {
+    height: 300px;
+  }
+}
