@@ -26,3 +26,17 @@
     }
   }
 }
+
+// Format tablette
+@media screen and (min-width: $vw-small) {
+  .features {
+    ul {
+      flex-direction: row;
+      justify-content: space-around;
+
+      li.subtitle {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
