@@ -30,6 +30,13 @@
         margin-right: 20px;
       }
     }
+
+    .img-group {
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      margin-top: 90px;
+    }
   }
 }
 
@@ -38,5 +45,9 @@
   .bg-black {
     display: flex;
     justify-content: space-between;
+
+    .img-group {
+      margin-top: 0;
+    }
   }
 }

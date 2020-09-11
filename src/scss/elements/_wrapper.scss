@@ -18,3 +18,11 @@
 .grid-center{
   grid-column: 2/3;
 }
+
+// Tablette
+@media screen and (min-width: $vw-small) {
+  .wrap {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
