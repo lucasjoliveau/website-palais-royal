@@ -1,0 +1,42 @@
+// Black background
+.bg-black {
+  background: $color-1;
+  padding: 70px 20px;
+
+  .bg-black-col-1 {
+    max-width: 540px;
+  }
+
+  h2 {
+    color: $color-6;
+  }
+
+  p {
+    color: $color-5;
+  }
+
+  img {
+    max-width: 348px;
+  }
+}
+
+// Tablette
+@media screen and (min-width: $vw-small) {
+  .bg-black {
+    img {
+      margin-bottom: 0 !important;
+
+      &:nth-child(1) {
+        margin-right: 20px;
+      }
+    }
+  }
+}
+
+// Ordinateur
+@media screen and (min-width: $vw-large) {
+  .bg-black {
+    display: flex;
+    justify-content: space-between;
+  }
+}
