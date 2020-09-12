@@ -5,4 +5,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
         selectElement('header').classList.toggle('active');
         selectElement('.background-bg').classList.toggle('active-bg');
     });
+
+    // Language selector
+    selectElement('.language-selector-link').addEventListener('click', () => {
+       console.log('Click menu langue');
+       selectElement('.language-selector-modale').classList.remove('language-selector-modale-hide');
+    });
 });

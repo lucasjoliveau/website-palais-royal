@@ -1,0 +1,42 @@
+.language-selector-modale-hide {
+  display: none !important;
+}
+
+.language-selector-modale {
+  background: rgba(0, 14, 5, 0.8);
+  backdrop-filter: blur(25px);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+
+  .modale-content {
+    background: $color-6;
+    padding: 70px 40px;
+
+    hr {
+      margin: 0;
+    }
+
+    ul {
+      list-style: none;
+
+      .modale-item {
+        display: flex;
+
+        img {
+          width: 16px;
+          height: 16px;
+          margin-right: 13px;
+        }
+      }
+    }
+  }
+
+}
