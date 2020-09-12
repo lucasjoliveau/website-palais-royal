@@ -1,5 +1,9 @@
 input[type="submit"] {
   background-color: $color-6 !important;
+
+  &:hover {
+    background-color: $color-2 !important;
+  }
 }
 
 .newsletter {
@@ -13,20 +17,20 @@ input[type="submit"] {
     display: none;
   }
 
-  input[type="text"] {
+  input[type="email"] {
     border-radius: 0;
     border-top: 0;
     border-left: 0;
     border-right: 0;
-    border-bottom: 2px solid $color-1;
+    border-bottom: 2px solid $color-7;
     position: relative;
 
-    &::before {
-      content: ' ';
-      width: 20px;
-      height: 20px;
-      background: red;
-      position: absolute;
+    &:hover {
+      border-color: $color-4;
+    }
+
+    &:active, &:focus {
+      border-color: $color-accent;
     }
   }
 }
