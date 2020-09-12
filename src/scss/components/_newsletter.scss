@@ -1,5 +1,9 @@
 input[type="submit"] {
   background-color: $color-6 !important;
+
+  &:hover {
+    background-color: $color-2 !important;
+  }
 }
 
 .newsletter {
