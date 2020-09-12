@@ -20,9 +20,16 @@
 }
 
 // Tablette
-@media screen and (min-width: $vw-small) {
+@media screen and (min-width: $vw-medium) {
   .wrap {
     padding-left: 50px;
     padding-right: 50px;
+  }
+}
+
+@media screen and (min-width: $max-width + $min-width) {
+  .wrap {
+    padding-left: 0;
+    padding-right: 0;
   }
 }

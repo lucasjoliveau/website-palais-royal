@@ -72,9 +72,41 @@ footer {
     }
 
     .language-selector {
+
+      a {
+        color: $color-6;
+        font-size: rem(14);
+        font-weight: $fw-bold;
+      }
+
       img {
         margin-right: 13px;
       }
+    }
+  }
+}
+
+// Tablette
+@media screen and (min-width: $vw-medium) {
+  footer {
+    .col-0 {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .footer-infos {
+      display: flex;
+      justify-content: space-between;
+      width: 500px;
+    }
+
+    .col-2, .col-1 {
+      margin-top: 0;
+    }
+
+    .bottom-footer {
+      flex-direction: row;
+      height: 20px;
     }
   }
 }
