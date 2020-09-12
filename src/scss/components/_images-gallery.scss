@@ -38,11 +38,11 @@
 }
 
 .grid-5 {
-   background: url("../images/gallery-2.png") no-repeat;
-   background-size: cover;
-   width: auto;
-   height: 204px;
- }
+  background: url("../images/gallery-2.png") no-repeat;
+  background-size: cover;
+  width: auto;
+  height: 204px;
+}
 
 .grid-6 {
   background: url("../images/gallery-4.png") no-repeat;
@@ -67,5 +67,16 @@
 @media screen and (min-width: $vw-small) {
   .grid-3, .grid-4 {
     height: 300px;
+  }
+}
+
+// Ordinateur
+@media screen and (min-width: $vw-medium) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6 {
+    height: 500px;
   }
 }
