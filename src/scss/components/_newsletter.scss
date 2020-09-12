@@ -1,0 +1,46 @@
+input[type="submit"] {
+  background-color: $color-6 !important;
+}
+
+.newsletter {
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+  }
+
+  .newsletter-img {
+    display: none;
+  }
+}
+
+
+// Tablette
+@media screen and (min-width: $vw-small) {
+  .newsletter-img {
+    display: flex !important;
+    margin-top: 100px;
+    background: linear-gradient(180.51deg, #FFFFFF 5.73%, rgba(255, 255, 255, 0) 50.08%), url("../images/newsletter.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 504px;
+  }
+}
+
+// Ordinateur
+@media screen and (min-width: $vw-large) {
+  .newsletter {
+    display: flex;
+    padding: 0;
+
+    h2 {
+      padding-top: 50px;
+    }
+
+    .newsletter-img {
+      width: 880px;
+      background: linear-gradient(90deg, #FFFFFF 6.02%, rgba(255, 255, 255, 0) 40.68%), url("../images/newsletter.png");
+      margin-top: 0;
+    }
+  }
+}
