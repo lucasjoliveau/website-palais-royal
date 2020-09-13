@@ -18,7 +18,13 @@
 
   .modale-content {
     background: $color-6;
-    padding: 70px 40px;
+    padding: 50px;
+    max-width: 700px;
+    width: 100%;
+
+    .subtitle {
+      color: $color-1;
+    }
 
     hr {
       margin: 0;
@@ -26,6 +32,7 @@
 
     ul {
       list-style: none;
+      padding: 0;
 
       .modale-item {
         display: flex;
@@ -35,8 +42,26 @@
           height: 16px;
           margin-right: 13px;
         }
+
+        a {
+          color: $color-4;
+        }
+      }
+
+      li {
+        margin-bottom: 5px;
       }
     }
+  }
+
+  .modale-title {
+    font-family: $ff-title;
+    color: $color-1;
+    font-size: rem(30);
+  }
+
+  .modale-continent {
+    margin-top: 30px;
   }
 
 }
