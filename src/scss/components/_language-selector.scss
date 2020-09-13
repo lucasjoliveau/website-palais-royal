@@ -19,7 +19,7 @@
   .modale-content {
     background: $color-6;
     padding: 50px;
-    max-width: 1100px;
+    max-width: 1200px;
     width: 100%;
     position: relative;
     height: 100%;
@@ -66,6 +66,7 @@
 
   .modale-continent {
     margin-top: 30px;
+    max-width: 200px;
   }
 
   .modale-continents {
@@ -77,6 +78,7 @@
     position: absolute;
     top: 30px;
     right: 50px;
+    cursor: pointer;
 
     .modale-close-line-top, .modale-close-line-bottom {
       position: absolute;
@@ -92,5 +94,28 @@
     .modale-close-line-top {
       transform: rotate(45deg);
     }
+  }
+}
+
+@media screen and (min-width: $vw-small) {
+  .modale-continent {
+    margin: 0 20px;
+  }
+}
+
+
+// Format tablette
+@media screen and (min-width: $vw-medium) {
+  .modale-continents {
+    flex-direction: row !important;
+    flex-wrap: wrap;
+  }
+}
+
+// Ordinateur
+@media screen and (min-width: $vw-large) {
+  .modale-content {
+    height: 700px !important;
+    overflow: hidden !important;
   }
 }
