@@ -4,6 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant du Palais Royal | Accueil</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#333333">
+    <meta name="apple-mobile-web-app-title" content="Restaurant du Palais-Royal">
+    <meta name="application-name" content="Restaurant du Palais-Royal">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="theme-color" content="#ffffff">
     <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;700&family=Prata&display=swap"
           rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
@@ -13,7 +22,7 @@
 </head>
 <body>
 <!--Menu de navigation-->
-<header class="wrap u-hidden">
+<header class="wrap">
     <div class="container">
         <nav class="nav">
             <ul class="nav-list nav-list-mobile">
@@ -92,7 +101,8 @@
     <div class="bg-black-col-1 wrapper">
         <h2>Le triangle d'or du secteur du meuble.</h2>
         <p>Découvrez le showroom bulthaup Raspail proposant des cuisines allemandes haut de gamme.</p>
-        <div><a href="#" class="btn-primary btn-col2">Voir le site web</a></div>
+        <div><a href="https://raspail.bulthaup.com" class="btn-primary btn-col2" target="_blank" rel="noopener">Voir le
+            site web</a></div>
     </div>
     <div class="img-group wrapper">
         <img src="images/raspail-1.png" alt="Photographie des cuisines Raspail">
@@ -102,7 +112,7 @@
 
 <!--Carte Google Maps-->
 <section class="maps wrap">
-    <!--    <iframe src="https://snazzymaps.com/embed/259260" width="100%" height="100%" style="border:none;"></iframe>-->
+    <iframe src="https://snazzymaps.com/embed/259260" width="100%" height="100%" style="border:none;"></iframe>
     <!-- <!DOCTYPE html>
     <html>
     <head>
@@ -221,10 +231,100 @@
             <li><a href="" class="small-text">Carrières</a></li>
             <li><a href="" class="small-text">Politique de confidentialité</a></li>
             <li><a href="" class="small-text">Contact</a></li>
-            <li class="language-selector"><a href="#"><img src="images/icons/france-flag.svg" alt="Drapeau de la France"
-                                                           class="icon">Français (France)</a></li>
+            <li class="language-selector"><a href="#" class="language-selector-link"><img
+                    src="images/icons/france-flag.svg" alt="Drapeau de la France"
+                    class="icon">Français (France)</a></li>
         </ul>
     </div>
 </footer>
+
+
+<!--Modale-->
+<div class="language-selector-modale language-selector-modale-hide">
+    <div class="modale-content">
+        <div class="modale-title">Changement de langue</div>
+        <div class="modale-close">
+            <span class="modale-close-line-top"></span>
+            <span class="modale-close-line-bottom"></span>
+        </div>
+        <hr>
+        <div class="modale-continents">
+            <div class="modale-continent">
+                <div class="subtitle">Afrique</div>
+                <ul>
+                    <li class="modale-item"><a href="#">Algérie</a></li>
+                    <li class="modale-item"><a href="#">Égypte</a></li>
+                    <li class="modale-item"><a href="#">Maroc</a></li>
+                    <li class="modale-item"><a href="#">Nigéria</a></li>
+                    <li class="modale-item"><a href="#">Afrique du Sud</a></li>
+                    <li class="modale-item"><a href="#">Tunisie</a></li>
+                </ul>
+            </div>
+            <div class="modale-continent">
+                <div class="subtitle">Amérique du nord</div>
+                <ul>
+                    <li class="modale-item"><a href="#">Canada (Francais)</a></li>
+                    <li class="modale-item"><a href="#">Canada (English)</a></li>
+                    <li class="modale-item"><a href="#">États-Unis</a></li>
+                </ul>
+            </div>
+            <div class="modale-continent">
+                <div class="subtitle">Asie</div>
+                <ul>
+                    <li class="modale-item"><a href="#">Hong Kong SAR</a></li>
+                    <li class="modale-item"><a href="#">Inde</a></li>
+                    <li class="modale-item"><a href="#">Indonésie</a></li>
+                    <li class="modale-item"><a href="#">Malaisie</a></li>
+                    <li class="modale-item"><a href="#">Philippines</a></li>
+                    <li class="modale-item"><a href="#">Singapour</a></li>
+                    <li class="modale-item"><a href="#">Thailande</a></li>
+                    <li class="modale-item"><a href="#">Vietnam</a></li>
+                </ul>
+            </div>
+            <div class="modale-continent">
+                <div class="subtitle">Europe</div>
+                <ul>
+                    <li class="modale-item"><a href="#">Bulgarie</a></li>
+                    <li class="modale-item"><a href="#">Cyprus</a></li>
+                    <li class="modale-item"><a href="#">France</a></li>
+                    <li class="modale-item"><a href="#">Malte</a></li>
+                    <li class="modale-item"><a href="#">Norvege</a></li>
+                    <li class="modale-item"><a href="#">Roumanie</a></li>
+                    <li class="modale-item"><a href="#">Turquie</a></li>
+                </ul>
+            </div>
+            <div class="modale-continent">
+                <div class="subtitle">Amérique latine</div>
+                <ul>
+                    <li class="modale-item"><a href="#">Argentine</a></li>
+                    <li class="modale-item"><a href="#">Bolivie</a></li>
+                    <li class="modale-item"><a href="#">Colombie</a></li>
+                    <li class="modale-item"><a href="#">Costa Rica</a></li>
+                    <li class="modale-item"><a href="#">République Dominiquaine</a></li>
+                    <li class="modale-item"><a href="#">Équateur</a></li>
+                    <li class="modale-item"><a href="#">Salvador</a></li>
+                    <li class="modale-item"><a href="#">Guatemala</a></li>
+                    <li class="modale-item"><a href="#">Honduras</a></li>
+                    <li class="modale-item"><a href="#">Nicaragua</a></li>
+                    <li class="modale-item"><a href="#">Panama</a></li>
+                    <li class="modale-item"><a href="#">Paraguay</a></li>
+                    <li class="modale-item"><a href="#">Trinité et Tobago</a></li>
+                    <li class="modale-item"><a href="#">Uruguay</a></li>
+                    <li class="modale-item"><a href="#">Venezuela</a></li>
+                </ul>
+            </div>
+            <div class="modale-continent">
+                <div class="subtitle">Moyen-Orient</div>
+                <ul>
+                    <li class="modale-item"><a href="#">Israel</a></li>
+                    <li class="modale-item"><a href="#">Jordanie</a></li>
+                    <li class="modale-item"><a href="#">Liban</a></li>
+                    <li class="modale-item"><a href="#">Émirats Arabes Unis, Arabie Saoudite, Qatar, Kuwait, Bahrain</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>

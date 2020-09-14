@@ -1,0 +1,123 @@
+.language-selector-modale-hide {
+  display: none !important;
+}
+
+.language-selector-modale {
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(25px);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+
+  .modale-content {
+    background: $color-6;
+    padding: 50px;
+    max-width: 1200px;
+    width: 100%;
+    position: relative;
+    height: 100%;
+    overflow: scroll;
+
+    .subtitle {
+      color: $color-1;
+    }
+
+    hr {
+      margin: 20px 0;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      .modale-item {
+        display: flex;
+
+        img {
+          width: 16px;
+          height: 16px;
+          margin-right: 13px;
+        }
+
+        a {
+          color: $color-4;
+        }
+      }
+
+      li {
+        margin-bottom: 5px;
+        max-width: 176px;
+      }
+    }
+  }
+
+  .modale-title {
+    font-family: $ff-title;
+    color: $color-1;
+    font-size: rem(30);
+  }
+
+  .modale-continent {
+    margin-top: 30px;
+    max-width: 200px;
+  }
+
+  .modale-continents {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .modale-close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+
+    .modale-close-line-top, .modale-close-line-bottom {
+      position: absolute;
+      width: 1.7rem;
+      height: 1px;
+      background-color: #000;
+    }
+
+    .modale-close-line-bottom {
+      transform: rotate(-45deg);
+    }
+
+    .modale-close-line-top {
+      transform: rotate(45deg);
+    }
+  }
+}
+
+@media screen and (min-width: $vw-small) {
+  .modale-continent {
+    margin: 0 20px;
+  }
+}
+
+
+// Format tablette
+@media screen and (min-width: $vw-medium) {
+  .modale-continents {
+    flex-direction: row !important;
+    flex-wrap: wrap;
+  }
+}
+
+// Ordinateur
+@media screen and (min-width: $vw-large) {
+  .modale-content {
+    height: 700px !important;
+    overflow: hidden !important;
+  }
+}
