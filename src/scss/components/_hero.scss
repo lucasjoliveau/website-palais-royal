@@ -33,3 +33,11 @@
     }
   }
 }
+
+// Ordinateur
+@media screen and (min-width: $vw-large) {
+  .hero {
+    margin: calc(10vh + 50px) 45px;
+    height: 79vh;
+  }
+}
