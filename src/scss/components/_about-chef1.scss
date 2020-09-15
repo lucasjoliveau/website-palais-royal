@@ -17,9 +17,9 @@
 @media screen and (min-width: $vw-large) {
   .about-chef {
     display: flex;
+  }
 
-    .about-chef-col-1 {
-      padding: 50px;
-    }
+  .about-chef-col1 {
+    padding: 50px !important;
   }
 }

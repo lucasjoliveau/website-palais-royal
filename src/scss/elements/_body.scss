@@ -8,6 +8,11 @@ body {
   margin: 0;
 }
 
+::selection {
+  background: $color-accent;
+  color: $color-6;
+}
+
 html {
   scroll-behavior: smooth;
 }
