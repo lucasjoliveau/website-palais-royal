@@ -1,0 +1,20 @@
+.plats {
+  padding-top: 43px;
+  padding-bottom: 43px;
+  margin-bottom: 80px;
+
+  .plats-list {
+    padding: 0;
+    list-style: none;
+
+    .plat {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .plat-price {
+        font-weight: $fw-bold;
+      }
+    }
+  }
+}
