@@ -1,4 +1,4 @@
-body{
+body {
   font-family: $ff-normal;
   font-size: $fz-normal;
   color: $color-4;
@@ -6,4 +6,13 @@ body{
 
   background: $color-bg-page;
   margin: 0;
+}
+
+::selection {
+  background: $color-accent;
+  color: $color-6;
+}
+
+html {
+  scroll-behavior: smooth;
 }
