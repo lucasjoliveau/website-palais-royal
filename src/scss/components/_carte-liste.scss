@@ -3,6 +3,19 @@
   padding-bottom: 43px;
   margin-bottom: 80px;
 
+  h2 {
+    color: $color-1;
+  }
+
+  .plats-precision {
+    font-style: italic;
+    font-weight: 300;
+    color: $color-4;
+    opacity: 0.5;
+    margin-bottom: 40px;
+    margin-top: 0;
+  }
+
   .plats-list {
     padding: 0;
     list-style: none;
@@ -14,7 +27,31 @@
 
       .plat-price {
         font-weight: $fw-bold;
+        color: $color-1;
       }
     }
+  }
+
+
+  .subtitle-group-price {
+    justify-content: space-between;
+
+    .subtitle-col1 {
+      display: flex;
+      align-items: center;
+    }
+
+    .menu-price {
+      font-weight: $fw-bold;
+      color: $color-1;
+    }
+  }
+}
+
+// Ordinateur
+@media screen and (min-width: 1800px) {
+  .plats {
+    padding-left: 100px !important;
+    padding-right: 100px !important;
   }
 }
