@@ -4,12 +4,44 @@
 
   .quote-icon {
     position: absolute;
-    top: 160px;
+    top: 343px;
     width: auto !important;
   }
 
   .hero-chef-col1 {
     margin-top: 150px;
     height: calc(100vh - 150px);
+  }
+
+  h1 {
+    color: $color-1;
+  }
+}
+
+// Tablette
+@media screen and (min-width: $vw-medium) {
+  .hero-chef {
+    flex-direction: row;
+    align-items: center;
+
+    .chef-photo-1 {
+      width: 400px;
+      height: 491px;
+    }
+  }
+}
+
+// Ordinateur
+@media screen and (min-width: $vw-large) {
+  .hero-chef {
+
+    .chef-photo-1 {
+      width: 829px;
+      height: 1000px;
+    }
+
+    .hero-chef-col1 {
+      max-width: 600px;
+    }
   }
 }
