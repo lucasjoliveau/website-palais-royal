@@ -5,7 +5,18 @@ document.addEventListener("DOMContentLoaded", function(event) {
     selectElement('.mobile-menu').addEventListener('click', () => {
         selectElement('header').classList.toggle('active');
         selectElement('.background-bg').classList.toggle('active-bg');
+        setTimeout(disabledMenu, 1000);
     });
+
+
+
+    // Call disabled mobile menu
+    function disabledMenu () {
+        // When the mobile menu is closed
+        if (!selectElement('header').classList.contains('active')) {
+            document.getElementById("nav-item-id").style.display = "none";
+        }
+    }
 
     // Language selector
     selectElement('.language-selector-link').addEventListener('click', () => {
