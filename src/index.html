@@ -113,47 +113,8 @@
 </section>
 
 <!--Carte Google Maps-->
-<section class="maps wrap">
-    <iframe src="https://snazzymaps.com/embed/259260" width="100%" height="100%" style="border:none;"></iframe>
-    <!-- <!DOCTYPE html>
-    <html>
-    <head>
-        <meta charset="utf-8">
-
-        <script src="https://cdn.apple-mapkit.com/mk/5.x.x/mapkit.js"></script>
-
-        <style>
-            #map {
-                width: 100%;
-                height: 600px;
-            }
-        </style>
-    </head>
-
-    <body>
-    <div id="map"></div>
-
-    <script>
-        mapkit.init({
-            authorizationCallback: function (done) {
-                var xhr = new XMLHttpRequest();
-                xhr.open("GET", "/services/jwt");
-                xhr.addEventListener("load", function () {
-                    done(this.responseText);
-                });
-                xhr.send();
-            }
-        });
-
-        var Cupertino = new mapkit.CoordinateRegion(
-            new mapkit.Coordinate(37.3316850890998, -122.030067374026),
-            new mapkit.CoordinateSpan(0.167647972, 0.354985255)
-        );
-        var map = new mapkit.Map("map");
-        map.region = Cupertino;
-    </script>
-    </body>
-    </html>-->
+<section class="maps wrapper">
+    <iframe src="https://snazzymaps.com/embed/259260" width="100%" height="100%" style="border:none;" class="bg-white-border"></iframe>
 </section>
 
 <!--Heures d'ouvertures-->
@@ -228,105 +189,42 @@
         </div>
         <hr>
         <ul class="bottom-footer">
-            <li>© 2020</li>
+            <li class="small-text">© 2020</li>
             <li><a href="" class="small-text">Mentions légales</a></li>
             <li><a href="" class="small-text">Carrières</a></li>
             <li><a href="" class="small-text">Politique de confidentialité</a></li>
             <li><a href="" class="small-text">Contact</a></li>
-            <li class="language-selector"><a href="#" class="language-selector-link"><img
+
+
+            <li class="language-selector">
+
+                <ul class=" language-selector-modale language-selector-modale-hide">
+                    <!-- Language selector modale -->
+                    <li class="language-selector-modale">
+                        <div class="modale-close">
+                            <span class="modale-close-line-top"></span>
+                            <span class="modale-close-line-bottom"></span>
+                        </div>
+                        <ul>
+                            <li class="modale-item"><a href="#">English</a></li>
+                            <li class="modale-item"><a href="#">فارسی</a></li>
+                            <li class="modale-item"><a href="#">中文</a></li>
+                            <li class="modale-item"><a href="#">Français (Canada)</a></li>
+                            <li class="modale-item"><a href="#">Español</a></li>
+                            <li class="modale-item"><a href="#">Pyccкий</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+
+
+                <div class="language-selector-link"><img
                     src="images/icons/france-flag.svg" alt="Drapeau de la France"
-                    class="icon">Français (France)</a></li>
+                    class="icon">Français (France)</div>
+
+            </li>
         </ul>
     </div>
 </footer>
-
-
-<!--Modale-->
-<div class="language-selector-modale language-selector-modale-hide">
-    <div class="modale-content">
-        <div class="modale-title">Changement de langue</div>
-        <div class="modale-close">
-            <span class="modale-close-line-top"></span>
-            <span class="modale-close-line-bottom"></span>
-        </div>
-        <hr>
-        <div class="modale-continents">
-            <div class="modale-continent">
-                <div class="subtitle">Afrique</div>
-                <ul>
-                    <li class="modale-item"><a href="#">Algérie</a></li>
-                    <li class="modale-item"><a href="#">Égypte</a></li>
-                    <li class="modale-item"><a href="#">Maroc</a></li>
-                    <li class="modale-item"><a href="#">Nigéria</a></li>
-                    <li class="modale-item"><a href="#">Afrique du Sud</a></li>
-                    <li class="modale-item"><a href="#">Tunisie</a></li>
-                </ul>
-            </div>
-            <div class="modale-continent">
-                <div class="subtitle">Amérique du nord</div>
-                <ul>
-                    <li class="modale-item"><a href="#">Canada (Francais)</a></li>
-                    <li class="modale-item"><a href="#">Canada (English)</a></li>
-                    <li class="modale-item"><a href="#">États-Unis</a></li>
-                </ul>
-            </div>
-            <div class="modale-continent">
-                <div class="subtitle">Asie</div>
-                <ul>
-                    <li class="modale-item"><a href="#">Hong Kong SAR</a></li>
-                    <li class="modale-item"><a href="#">Inde</a></li>
-                    <li class="modale-item"><a href="#">Indonésie</a></li>
-                    <li class="modale-item"><a href="#">Malaisie</a></li>
-                    <li class="modale-item"><a href="#">Philippines</a></li>
-                    <li class="modale-item"><a href="#">Singapour</a></li>
-                    <li class="modale-item"><a href="#">Thailande</a></li>
-                    <li class="modale-item"><a href="#">Vietnam</a></li>
-                </ul>
-            </div>
-            <div class="modale-continent">
-                <div class="subtitle">Europe</div>
-                <ul>
-                    <li class="modale-item"><a href="#">Bulgarie</a></li>
-                    <li class="modale-item"><a href="#">Cyprus</a></li>
-                    <li class="modale-item"><a href="#">France</a></li>
-                    <li class="modale-item"><a href="#">Malte</a></li>
-                    <li class="modale-item"><a href="#">Norvege</a></li>
-                    <li class="modale-item"><a href="#">Roumanie</a></li>
-                    <li class="modale-item"><a href="#">Turquie</a></li>
-                </ul>
-            </div>
-            <div class="modale-continent">
-                <div class="subtitle">Amérique latine</div>
-                <ul>
-                    <li class="modale-item"><a href="#">Argentine</a></li>
-                    <li class="modale-item"><a href="#">Bolivie</a></li>
-                    <li class="modale-item"><a href="#">Colombie</a></li>
-                    <li class="modale-item"><a href="#">Costa Rica</a></li>
-                    <li class="modale-item"><a href="#">République Dominiquaine</a></li>
-                    <li class="modale-item"><a href="#">Équateur</a></li>
-                    <li class="modale-item"><a href="#">Salvador</a></li>
-                    <li class="modale-item"><a href="#">Guatemala</a></li>
-                    <li class="modale-item"><a href="#">Honduras</a></li>
-                    <li class="modale-item"><a href="#">Nicaragua</a></li>
-                    <li class="modale-item"><a href="#">Panama</a></li>
-                    <li class="modale-item"><a href="#">Paraguay</a></li>
-                    <li class="modale-item"><a href="#">Trinité et Tobago</a></li>
-                    <li class="modale-item"><a href="#">Uruguay</a></li>
-                    <li class="modale-item"><a href="#">Venezuela</a></li>
-                </ul>
-            </div>
-            <div class="modale-continent">
-                <div class="subtitle">Moyen-Orient</div>
-                <ul>
-                    <li class="modale-item"><a href="#">Israel</a></li>
-                    <li class="modale-item"><a href="#">Jordanie</a></li>
-                    <li class="modale-item"><a href="#">Liban</a></li>
-                    <li class="modale-item"><a href="#">Émirats Arabes Unis, Arabie Saoudite, Qatar, Kuwait, Bahrain</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
 </body>
 </html>
