@@ -12,8 +12,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     // Call disabled mobile menu
     function disabledMenu () {
+        // If the mobile menu is open
+        if (selectElement('header').classList.contains('active')) {
+            console.log("ouvert");
+            document.getElementById("nav-item-id").style.display = "unset";
+        }
         // When the mobile menu is closed
-        if (!selectElement('header').classList.contains('active')) {
+        else {
             document.getElementById("nav-item-id").style.display = "none";
         }
     }
