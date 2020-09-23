@@ -8,8 +8,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
         setTimeout(disabledMenu, 1000);
     });
 
-
-
     // Call disabled mobile menu
     function disabledMenu () {
         // If the mobile menu is open
