@@ -1,0 +1,64 @@
+.hero-carte {
+  margin-top: 23px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url("../images/hero-plat-mobile.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 200px;
+
+  .title-carte-group {
+    background: white;
+
+    h1 {
+      color: $color-1;
+    }
+
+    .subtitle-group {
+      padding-top: 30px;
+    }
+  }
+}
+
+// Tablette
+@media screen and (min-width: $vw-small) {
+  .hero-carte {
+    background-image: url("../images/hero-plat.png");
+
+    .title-carte-group {
+      //max-width: 530px;
+      padding: 50px;
+      background: none;
+    }
+
+    .title-carte-group {
+      position: relative;
+      .white-bg {
+        background: white;
+        content: ' ';
+        width: 700px;
+        height: 400px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 1;
+      }
+
+      h1 {
+        color: $color-1;
+        position: relative;
+        z-index: 10;
+      }
+
+      .subtitle-group {
+        padding-top: 30px;
+        position: relative;
+        z-index: 10;
+      }
+    }
+  }
+
+}
