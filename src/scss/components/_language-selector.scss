@@ -2,91 +2,74 @@
   display: none !important;
 }
 
-.language-selector-modale {
-  background: rgba(0, 0, 0, 0.8);
+
+.language-selector {
+  position: relative;
+
+  ul:nth-child(1) {
+    position: absolute;
+    bottom: 52px;
+    right: -23%;
+
+    &:after {
+      content: ' ';
+      //width: 15px;
+      //height: 15px;
+      position: absolute;
+      left: 52%;
+      width: 0;
+      height: 0;
+      border-left: 15px solid transparent;
+      border-right: 15px solid transparent;
+      border-top: 15px solid #fff;
+    }
+  }
+}
+
+li.language-selector-modale {
+  background: white;
+  padding: 20px;
   backdrop-filter: blur(25px);
   z-index: 9999;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  top: 0;
-  left: 0;
+  width: 200px;
+  height: 205px;
+  border-radius: 10px;
 
-  .modale-content {
-    background: $color-6;
-    padding: 50px;
-    max-width: 1200px;
-    width: 100%;
-    position: relative;
-    height: 100%;
-    overflow: scroll;
+  ul {
+    padding-left: 0;
+    list-style: none;
 
-    .subtitle {
-      color: $color-1;
-    }
+    li {
 
-    hr {
-      margin: 20px 0;
-    }
+      a {
+        font-size: 16px !important;
+        font-weight: normal !important;
 
-    ul {
-      list-style: none;
-      padding: 0;
-
-      .modale-item {
-        display: flex;
-
-        img {
-          width: 16px;
-          height: 16px;
-          margin-right: 13px;
-        }
-
-        a {
-          color: $color-4;
+        &:hover {
+          font-weight: $fw-bold !important;
         }
       }
-
-      li {
-        margin-bottom: 5px;
-        max-width: 176px;
-      }
     }
-  }
-
-  .modale-title {
-    font-family: $ff-title;
-    color: $color-1;
-    font-size: rem(30);
-  }
-
-  .modale-continent {
-    margin-top: 30px;
-    max-width: 200px;
-  }
-
-  .modale-continents {
-    display: flex;
-    flex-direction: column;
   }
 
   .modale-close {
     position: absolute;
-    top: 30px;
-    right: 30px;
-    height: 20px;
-    width: 20px;
+    top: 15px;
+    right: 15px;
+    height: 22px;
+    width: 22px;
     cursor: pointer;
+    background: #E9E9E9;
+    border-radius: 18px;
 
     .modale-close-line-top, .modale-close-line-bottom {
       position: absolute;
-      width: 1.7rem;
+      width: 10px;
       height: 1px;
-      background-color: #000;
+      top: 10px;
+      left: 6px;
+      background-color: #848484;
     }
 
     .modale-close-line-bottom {
@@ -96,28 +79,5 @@
     .modale-close-line-top {
       transform: rotate(45deg);
     }
-  }
-}
-
-@media screen and (min-width: $vw-small) {
-  .modale-continent {
-    margin: 0 20px;
-  }
-}
-
-
-// Format tablette
-@media screen and (min-width: $vw-medium) {
-  .modale-continents {
-    flex-direction: row !important;
-    flex-wrap: wrap;
-  }
-}
-
-// Ordinateur
-@media screen and (min-width: $vw-large) {
-  .modale-content {
-    height: 700px !important;
-    overflow: hidden !important;
   }
 }
