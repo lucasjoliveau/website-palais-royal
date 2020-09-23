@@ -81,3 +81,10 @@ li.language-selector-modale {
     }
   }
 }
+
+.language-selector-link {
+  font-size: rem(14);
+  color: white;
+  font-weight: $fw-bold;
+  cursor: pointer;
+}
