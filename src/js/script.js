@@ -5,7 +5,21 @@ document.addEventListener("DOMContentLoaded", function(event) {
     selectElement('.mobile-menu').addEventListener('click', () => {
         selectElement('header').classList.toggle('active');
         selectElement('.background-bg').classList.toggle('active-bg');
+        setTimeout(disabledMenu, 1000);
     });
+
+    // Call disabled mobile menu
+    function disabledMenu () {
+        // If the mobile menu is open
+        if (selectElement('header').classList.contains('active')) {
+            console.log("ouvert");
+            document.getElementById("nav-item-id").style.display = "unset";
+        }
+        // When the mobile menu is closed
+        else {
+            document.getElementById("nav-item-id").style.display = "none";
+        }
+    }
 
     // Language selector
     selectElement('.language-selector-link').addEventListener('click', () => {
