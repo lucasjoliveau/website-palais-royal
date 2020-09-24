@@ -23,6 +23,8 @@
 // Tablette
 @media screen and (min-width: $vw-small) {
   .bg-black {
+    padding-left: 0;
+    padding-right: 0;
     img {
       margin-bottom: 0 !important;
 
@@ -36,6 +38,10 @@
       display: flex;
       justify-content: center;
       margin-top: 90px;
+    }
+
+    .bg-black-col-1 {
+      margin: 0;
     }
   }
 }
