@@ -4,7 +4,7 @@
   padding: 70px 20px;
 
   .bg-black-col-1 {
-    max-width: 540px;
+    max-width: 500px;
   }
 
   h2 {
@@ -17,6 +17,11 @@
 
   img {
     max-width: 348px;
+    max-height: 348px;
+  }
+
+  .btn-primary {
+    margin-bottom: 50px;
   }
 }
 
@@ -50,10 +55,23 @@
 @media screen and (min-width: $vw-large) {
   .bg-black {
     display: flex;
-    justify-content: space-between;
+    //justify-content: space-between;
+    padding: 50px 0;
+
+    .wrapper {
+      display: flex;
+      justify-content: space-between;
+      padding-left: 0;
+      padding-right: 0;
+    }
 
     .img-group {
       margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    .btn-primary {
+      margin-bottom: 0;
     }
   }
 }
