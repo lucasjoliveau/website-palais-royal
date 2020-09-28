@@ -79,6 +79,11 @@ body > header > div > nav > ul.nav-list.nav-list-mobile {
   width: 175px !important;
 }
 
+.nav-list-links {
+  list-style: none;
+  padding: 0;
+}
+
 @media screen and (max-width: $vw-small) {
   header {
     height: 4rem;
