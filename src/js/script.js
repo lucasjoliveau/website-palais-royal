@@ -1,4 +1,7 @@
 document.addEventListener("DOMContentLoaded", function(event) {
+
+    AOS.init();
+
     const selectElement = (element) => document.querySelector(element);
 
     // Navigation menu
