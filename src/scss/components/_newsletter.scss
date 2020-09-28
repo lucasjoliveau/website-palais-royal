@@ -1,5 +1,6 @@
 input[type="submit"] {
   background-color: $color-6 !important;
+  cursor: pointer;
 
   &:hover {
     background-color: $color-2 !important;

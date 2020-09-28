@@ -32,5 +32,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
     selectElement('.modale-close').addEventListener('click', () => {
         selectElement('.language-selector-modale').classList.add('language-selector-modale-hide')
     })
+
 });
 
