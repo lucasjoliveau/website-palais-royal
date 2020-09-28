@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", function(event) {
+
+    AOS.init();
     const selectElement = (element) => document.querySelector(element);
 
     // Navigation menu
@@ -25,11 +27,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
     selectElement('.language-selector-link').addEventListener('click', () => {
        console.log('Click menu langue');
        selectElement('.language-selector-modale').classList.remove('language-selector-modale-hide');
-       // selectElement('body').style.overflow = "hidden";
     });
 
     selectElement('.modale-close').addEventListener('click', () => {
         selectElement('.language-selector-modale').classList.add('language-selector-modale-hide')
-        // selectElement('body').style.overflow = "";
     })
 });
+

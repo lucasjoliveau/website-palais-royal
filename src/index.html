@@ -15,10 +15,11 @@
     <meta name="theme-color" content="#ffffff">
     <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;700&family=Prata&display=swap"
           rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/3.0.0-beta.1/aos.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/3.0.0-beta.1/aos.js"></script>
     <script defer src="js/script.js"></script>
-
 </head>
 <body>
 <!--Menu de navigation-->
@@ -59,40 +60,40 @@
 <div class="background-bg"></div>
 
 <!--Hero-->
-<section class="hero">
+<section class="hero" data-aos="zoom-out">
     <div class="hero-text wrap">
-        <div class="subtitle">Bienvenu au</div>
-        <h1>Restaurant du Palais Royal</h1>
-        <p>Restaurant gastronomique dans les jardins du Palais royal.</p>
-        <div><a href="#" class="btn-primary btn-col1">Réserver une table</a></div>
+        <div class="subtitle" data-aos="fade" data-aos-easing="linear" data-aos-delay="300">Bienvenu au</div>
+        <h1 data-aos="fade" data-aos-easing="linear" data-aos-delay="400" data-aos-duration="1000">Restaurant du Palais Royal</h1>
+        <p data-aos="fade" data-aos-easing="linear" data-aos-delay="500">Restaurant gastronomique dans les jardins du Palais royal.</p>
+        <div   data-aos="fade" data-aos-easing="linear" data-aos-delay="600"><a href="#" class="btn-primary btn-col1">Réserver une table</a></div>
     </div>
 </section>
 
 <!--Galerie d'images-->
 <section class="images-gallery grid-container bg-white-border">
-    <div class="grid-1"></div>
-    <div class="grid-2"></div>
-    <div class="grid-3"></div>
-    <div class="grid-4"></div>
-    <div class="grid-5"></div>
-    <div class="grid-6"></div>
+    <div class="grid-1" data-aos="fade" data-aos-easing="linear" data-aos-delay="100"></div>
+    <div class="grid-2" data-aos="fade" data-aos-easing="linear" data-aos-delay="150"></div>
+    <div class="grid-3" data-aos="fade" data-aos-easing="linear" data-aos-delay="200"></div>
+    <div class="grid-4" data-aos="fade" data-aos-easing="linear" data-aos-delay="300"></div>
+    <div class="grid-5" data-aos="fade" data-aos-easing="linear" data-aos-delay="350"></div>
+    <div class="grid-6" data-aos="fade" data-aos-easing="linear" data-aos-delay="400"></div>
 </section>
 
 <!--Réservez votre expérience-->
 <section class="book-experience wrap">
-    <h2>Réservez votre expérience.</h2>
-    <p>Venez déguster des mets raffinés de saison servis dans un cadre feutré et luxueux avec vue sur le jardin du
+    <h2 data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">Réservez votre expérience.</h2>
+    <p data-aos="fade" data-aos-delay="300" data-aos-easing="linear">Venez déguster des mets raffinés de saison servis dans un cadre feutré et luxueux avec vue sur le jardin du
         Palais royal.</p>
-    <div><a href="#" class="btn-primary btn-col1">Réserver maintenant</a></div>
+    <div data-aos="fade" data-aos-easing="linear" data-aos-delay="500"><a href="#" class="btn-primary btn-col1">Réserver maintenant</a></div>
 </section>
 
 <!--Fonctionnalitées-->
 <section class="features bg-white-border wrap wrapper">
     <ul>
-        <li class="subtitle"><img src="images/icons/private-chauffeur.svg" alt="Icône chauffeur privé">Chauffeur privé
+        <li data-aos="fade" data-aos-easing="linear" class="subtitle"><img src="images/icons/private-chauffeur.svg" alt="Icône chauffeur privé">Chauffeur privé
         </li>
-        <li class="subtitle"><img src="images/icons/voiturier.svg" alt="Icône voiturier">Service de voiturier</li>
-        <li class="subtitle"><img src="images/icons/etoile-michelin.svg" alt="Icône étoile du guide Michelin">Une étoile
+        <li data-aos="fade" data-aos-easing="linear" data-aos-delay="150" class="subtitle"><img src="images/icons/voiturier.svg" alt="Icône voiturier">Service de voiturier</li>
+        <li data-aos="fade" data-aos-easing="linear" data-aos-delay="300" class="subtitle"><img src="images/icons/etoile-michelin.svg" alt="Icône étoile du guide Michelin">Une étoile
             au guide Michelin
         </li>
     </ul>
@@ -102,16 +103,16 @@
 <section class="bg-black">
     <div class="wrap wrapper">
         <div class="bg-black-col-1">
-            <h2>Venez vivre le temps des fêtes de Noël.</h2>
-            <p>Le 24 décembre 2020, de 10h à 23h, le chef Philip Chronopoulos proposera une composition de plats
+            <h2 data-aos="fade-right" data-aos-easing="linear">Venez vivre le temps des fêtes de Noël.</h2>
+            <p data-aos="fade" data-aos-easing="linear" data-aos-delay="100">Le 24 décembre 2020, de 10h à 23h, le chef Philip Chronopoulos proposera une composition de plats
                 exlusifs
                 sur le thème de Noël.</p>
-            <div><a href="https://raspail.bulthaup.com" class="btn-primary btn-col2" target="_blank" rel="noopener">En
+            <div data-aos="fade" data-aos-easing="linear" data-aos-delay="250"><a href="https://raspail.bulthaup.com" class="btn-primary btn-col2" target="_blank" rel="noopener">En
                 savoir plus</a></div>
         </div>
         <div class="img-group wrapper">
-            <img src="images/publicite-1.png" alt="Photographie des cuisines Raspail">
-            <img src="images/publicite-2.png" alt="Photographie des cuisines Raspail">
+            <img data-aos="fade" data-aos-delay="150" data-aos-duration="500" src="images/publicite-1.png" alt="Photographie d'un plat de Noel">
+            <img data-aos="fade" data-aos-delay="300" data-aos-duration="800" src="images/publicite-2.png" alt="Photographie d'un sapin de Noel">
         </div>
     </div>
 </section>
@@ -119,17 +120,17 @@
 <!--Carte Google Maps-->
 <section class="maps wrapper">
     <iframe src="https://snazzymaps.com/embed/259260" width="100%" height="100%" style="border:none;"
-            class="bg-white-border"></iframe>
+            class="bg-white-border" data-aos="fade" data-aos-easing="linear"></iframe>
 </section>
 
 <!--Heures d'ouvertures-->
 <section class="opening-hours wrap wrapper">
     <hr class="hr-large">
     <div class="opening-hours-col1">
-        <div class="subtitle">Ouvert du mardi au samedi</div>
-        <div class="subtitle">De 12h à 14h & de 19h à 22h.</div>
+        <div class="subtitle" data-aos="fade" data-aos-easing="linear">Ouvert du mardi au samedi</div>
+        <div class="subtitle" data-aos="fade" data-aos-easing="linear" data-aos-delay="150">De 12h à 14h & de 19h à 22h.</div>
     </div>
-    <div class="opening-hours-col2">
+    <div class="opening-hours-col2"  data-aos="fade" data-aos-easing="linear" data-aos-delay="300">
         <p>110 Galeries de Valois</p>
         <p>75001 Paris, France</p>
     </div>
