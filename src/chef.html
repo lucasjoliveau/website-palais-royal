@@ -41,17 +41,19 @@
                 <li class="nav-item nav-item-hidden">
                     <a href="index.html" class="nav-link-rest"></a>
                 </li>
-                <ul class="nav-list-links">
-                    <li class="nav-item">
-                        <a href="carte.html" class="nav-link">À la carte</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="chef.html" class="nav-link">Le Chef</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link btn-secondary btn-col4">Réserver</a>
-                    </li>
-                </ul>
+                <li class="nav-list-links" id="nav-item-id">
+                    <ul>
+                        <li class="nav-item">
+                            <a href="carte.html" class="nav-link">À la carte</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="chef.html" class="nav-link">Le Chef</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link btn-secondary btn-col4">Réserver</a>
+                        </li>
+                    </ul>
+                </li>
             </ul>
             <!-- Larger -->
         </nav>
@@ -137,14 +139,15 @@
         </div>
     </div>
 </section>
+
 <!--Pied de page-->
 <footer class="wrap">
     <div class="wrapper">
         <div class="col-0">
-    <span class="logo-member">
-        <img src="images/logo-white.svg" alt="Logo du Restaurant du Palais Royal en blanc">
-        <p class="small-text">Membre EVOK®</p>
-    </span>
+            <div class="logo-member">
+                <img src="images/logo-white.svg" alt="Logo du Restaurant du Palais Royal en blanc">
+                <p class="small-text">Membre EVOK®</p>
+            </div>
 
             <div class="footer-infos">
                 <div class="col-1">
@@ -180,105 +183,42 @@
         </div>
         <hr>
         <ul class="bottom-footer">
-            <li>© 2020</li>
+            <li class="small-text">© 2020</li>
             <li><a href="" class="small-text">Mentions légales</a></li>
             <li><a href="" class="small-text">Carrières</a></li>
             <li><a href="" class="small-text">Politique de confidentialité</a></li>
             <li><a href="" class="small-text">Contact</a></li>
-            <li class="language-selector"><a href="#" class="language-selector-link"><img
-                    src="images/icons/france-flag.svg" alt="Drapeau de la France"
-                    class="icon">Français (France)</a></li>
+
+
+            <li class="language-selector">
+
+                <ul class=" language-selector-modale language-selector-modale-hide">
+                    <!-- Language selector modale -->
+                    <li class="language-selector-modale">
+                        <div class="modale-close">
+                            <span class="modale-close-line-top"></span>
+                            <span class="modale-close-line-bottom"></span>
+                        </div>
+                        <ul>
+                            <li class="modale-item"><a href="#">English</a></li>
+                            <li class="modale-item"><a href="#">فارسی</a></li>
+                            <li class="modale-item"><a href="#">中文</a></li>
+                            <li class="modale-item"><a href="#">Français (Canada)</a></li>
+                            <li class="modale-item"><a href="#">Español</a></li>
+                            <li class="modale-item"><a href="#">Pyccкий</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+
+                <div class="language-selector-link"><img
+                        src="images/icons/france-flag.svg" alt="Drapeau de la France"
+                        class="icon">Français (France)
+                </div>
+
+            </li>
         </ul>
     </div>
 </footer>
-
-
-<!--Modale-->
-<div class="language-selector-modale language-selector-modale-hide">
-    <div class="modale-content">
-        <div class="modale-title">Changement de langue</div>
-        <div class="modale-close">
-            <span class="modale-close-line-top"></span>
-            <span class="modale-close-line-bottom"></span>
-        </div>
-        <hr>
-        <div class="modale-continents">
-            <div class="modale-continent">
-                <div class="subtitle">Afrique</div>
-                <ul>
-                    <li class="modale-item"><a href="#">Algérie</a></li>
-                    <li class="modale-item"><a href="#">Égypte</a></li>
-                    <li class="modale-item"><a href="#">Maroc</a></li>
-                    <li class="modale-item"><a href="#">Nigéria</a></li>
-                    <li class="modale-item"><a href="#">Afrique du Sud</a></li>
-                    <li class="modale-item"><a href="#">Tunisie</a></li>
-                </ul>
-            </div>
-            <div class="modale-continent">
-                <div class="subtitle">Amérique du nord</div>
-                <ul>
-                    <li class="modale-item"><a href="#">Canada (Francais)</a></li>
-                    <li class="modale-item"><a href="#">Canada (English)</a></li>
-                    <li class="modale-item"><a href="#">États-Unis</a></li>
-                </ul>
-            </div>
-            <div class="modale-continent">
-                <div class="subtitle">Asie</div>
-                <ul>
-                    <li class="modale-item"><a href="#">Hong Kong SAR</a></li>
-                    <li class="modale-item"><a href="#">Inde</a></li>
-                    <li class="modale-item"><a href="#">Indonésie</a></li>
-                    <li class="modale-item"><a href="#">Malaisie</a></li>
-                    <li class="modale-item"><a href="#">Philippines</a></li>
-                    <li class="modale-item"><a href="#">Singapour</a></li>
-                    <li class="modale-item"><a href="#">Thailande</a></li>
-                    <li class="modale-item"><a href="#">Vietnam</a></li>
-                </ul>
-            </div>
-            <div class="modale-continent">
-                <div class="subtitle">Europe</div>
-                <ul>
-                    <li class="modale-item"><a href="#">Bulgarie</a></li>
-                    <li class="modale-item"><a href="#">Cyprus</a></li>
-                    <li class="modale-item"><a href="#">France</a></li>
-                    <li class="modale-item"><a href="#">Malte</a></li>
-                    <li class="modale-item"><a href="#">Norvege</a></li>
-                    <li class="modale-item"><a href="#">Roumanie</a></li>
-                    <li class="modale-item"><a href="#">Turquie</a></li>
-                </ul>
-            </div>
-            <div class="modale-continent">
-                <div class="subtitle">Amérique latine</div>
-                <ul>
-                    <li class="modale-item"><a href="#">Argentine</a></li>
-                    <li class="modale-item"><a href="#">Bolivie</a></li>
-                    <li class="modale-item"><a href="#">Colombie</a></li>
-                    <li class="modale-item"><a href="#">Costa Rica</a></li>
-                    <li class="modale-item"><a href="#">République Dominiquaine</a></li>
-                    <li class="modale-item"><a href="#">Équateur</a></li>
-                    <li class="modale-item"><a href="#">Salvador</a></li>
-                    <li class="modale-item"><a href="#">Guatemala</a></li>
-                    <li class="modale-item"><a href="#">Honduras</a></li>
-                    <li class="modale-item"><a href="#">Nicaragua</a></li>
-                    <li class="modale-item"><a href="#">Panama</a></li>
-                    <li class="modale-item"><a href="#">Paraguay</a></li>
-                    <li class="modale-item"><a href="#">Trinité et Tobago</a></li>
-                    <li class="modale-item"><a href="#">Uruguay</a></li>
-                    <li class="modale-item"><a href="#">Venezuela</a></li>
-                </ul>
-            </div>
-            <div class="modale-continent">
-                <div class="subtitle">Moyen-Orient</div>
-                <ul>
-                    <li class="modale-item"><a href="#">Israel</a></li>
-                    <li class="modale-item"><a href="#">Jordanie</a></li>
-                    <li class="modale-item"><a href="#">Liban</a></li>
-                    <li class="modale-item"><a href="#">Émirats Arabes Unis, Arabie Saoudite, Qatar, Kuwait, Bahrain</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
 </body>
 </html>

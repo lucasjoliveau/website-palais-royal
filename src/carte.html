@@ -20,7 +20,6 @@
     <link rel="stylesheet" href="css/main.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/3.0.0-beta.1/aos.js"></script>
     <script defer src="js/script.js"></script>
-
 </head>
 <body>
 <!--Menu de navigation-->
@@ -42,17 +41,19 @@
                 <li class="nav-item nav-item-hidden">
                     <a href="index.html" class="nav-link-rest"></a>
                 </li>
-                <ul class="nav-list-links" id="nav-item-id">
-                    <li class="nav-item">
-                        <a href="carte.html" class="nav-link">À la carte</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="chef.html" class="nav-link">Le Chef</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link btn-secondary btn-col4">Réserver</a>
-                    </li>
-                </ul>
+                <li class="nav-list-links" id="nav-item-id">
+                    <ul>
+                        <li class="nav-item">
+                            <a href="carte.html" class="nav-link">À la carte</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="chef.html" class="nav-link">Le Chef</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link btn-secondary btn-col4">Réserver</a>
+                        </li>
+                    </ul>
+                </li>
             </ul>
             <!-- Larger -->
         </nav>
@@ -134,11 +135,11 @@
 <section class="plats bg-white-border wrapper" data-aos="fade" data-aos-easing="linear">
     <div class="wrap">
         <div class="subtitle-group subtitle-group-price">
-            <span class="subtitle-col1" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="500"
+            <div class="subtitle-col1" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="500"
                   data-aos-delay="500">
                 <span class="subtitle-line"></span>
                 <h2>Menu déjeuner</h2>
-                </span>
+                </div>
             <span class="menu-price">57</span>
         </div>
         <p class="plats-precision">Entrée, plat et dessert au choix.</p>
@@ -167,11 +168,11 @@
 <section class="plats bg-white-border wrapper" data-aos="fade" data-aos-easing="linear">
     <div class="wrap">
         <div class="subtitle-group subtitle-group-price">
-            <span class="subtitle-col1" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="500"
+            <div class="subtitle-col1" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="500"
                   data-aos-delay="500">
                 <span class="subtitle-line"></span>
                 <h2>Menu dégustation</h2>
-                </span>
+                </div>
             <span class="menu-price" data-aos="fade" data-aos-easing="linear" data-aos-duration="500" data-aos-delay="600">162</span>
         </div>
         <p class="plats-precision" data-aos="fade" data-aos-easing="linear" data-aos-duration="500" data-aos-delay="700">Ce menu est servi pour l’ensemble des convives à table.</p>
@@ -195,6 +196,8 @@
         Palais royal.</p>
     <div data-aos="fade" data-aos-easing="linear" data-aos-delay="700"><a href="#" class="btn-primary btn-col2">Réserver maintenant</a></div>
 </section>
+
+
 <!--Pied de page-->
 <footer class="wrap">
     <div class="wrapper">
